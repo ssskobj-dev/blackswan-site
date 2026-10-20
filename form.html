@@ -34,6 +34,9 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--pur)}
 .ng{display:block;background:#FDE2E2;border:2px solid #C92A2A}
 .note{font-size:13px;color:var(--mute)}
 a{color:var(--pur)}
+.ai{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:14px 18px;margin-bottom:22px}
+.ai summary{font-weight:900;cursor:pointer;font-size:16px}
+.ai textarea{width:100%;font:inherit;font-size:14px;line-height:1.6;padding:12px;border:2px solid var(--line);border-radius:10px;background:#FAFAF8;margin-top:6px}
 @media(max-width:480px){.row{grid-template-columns:1fr}}
 </style>
 </head>
@@ -42,6 +45,41 @@ a{color:var(--pur)}
   <div class="label">REQUEST FORM</div>
   <h1>依頼フォーム</h1>
   <p class="lead">わからない項目は空欄で大丈夫です。空欄は［　］の仮置きにして作り、スライド上でご自身で差し替えられます。送信後、翌営業日を目安にスライドのリンクをメールでお送りします。初稿をそのまま納品し、作り直しは承っていないので、独自性と価格は正確にお書きください。</p>
+
+
+  <details class="ai">
+    <summary>書き方に迷ったら：AIに下書きを手伝ってもらうプロンプト（任意）</summary>
+    <p class="note" style="margin:10px 0 12px">お使いのAIチャットに、下の文章をそのまま貼ってください。【　】を埋めるだけで、このフォームの項目に合わせた下書きが返ってきます。返ってきた内容は、事実と違うところがないか確認してから貼ってください。</p>
+    <textarea id="aiPrompt" readonly rows="18">あなたはクラウドファンディングのページ制作を手伝うアシスタントです。
+私の商品の情報をもとに、支援者が「欲しい」「応援したい」と思える言葉で、依頼フォームの下書きを作ってください。
+
+【商品・サービス名】
+【どんな商品か（自由に書いてください。箇条書きでOK）】
+【誰に届けたいか】
+【一番の売り（思いつくだけ）】
+【仕様で分かっていること（サイズ・重さ・素材・色・対応など）】
+【価格の予定（超早割・早割・セットなど、あれば）】
+【作ることにしたきっかけ・こだわり・苦労したこと】
+【不安な点・リスク（遅れそう、仕様が変わるかも、など）】
+
+次の見出しごとに出力してください：
+1. 一言で言うと（30字以内。何の商品かが3秒で分かる言葉）
+2. ターゲット（誰が、どんな場面で困っているか）
+3. 独自性（最大3つ。それぞれ「見出し＋2行の説明」。支援者の生活がどう変わるかで書く）
+4. 数字で言えること（私が書いた情報の中にある数字だけ。根拠がない数字は作らない。根拠が必要なものは「要確認」と書く）
+5. 使い方・使うシーン（3〜4場面）
+6. リターン案（超早割→早割→セットの順。限定数の考え方も）
+7. ストーリー（作り手の言葉で3〜5段落。きっかけ→壁→乗り越え方→届けたい相手）
+8. リスク・注意事項（先に正直に書いた方が信頼される項目）
+9. FAQにしたい質問（支援前に聞かれそうなこと5つ）
+
+守ること：
+・私が書いていない機能・数値・経歴を足さない
+・「最安」「No.1」「必ず」「永久」は使わない
+・他社や他の商品と比べない
+・一般販売価格がまだ決まっていない場合は「○%OFF」と書かない</textarea>
+    <button type="button" class="btn alt" id="copyPrompt" style="margin-top:10px;font-size:16px;padding:14px">プロンプトをコピーする</button>
+  </details>
 
   <form id="f" novalidate>
     <fieldset>
@@ -141,6 +179,13 @@ a{color:var(--pur)}
 // ▼ Google Apps Script のウェブアプリURLに差し替える（apps_script.gs を参照）
 const ENDPOINT = "https://script.google.com/macros/s/AKfycbwZgKGxFidVNU_POb9lISEnuRIjHo8GcBifXjRF1sO8-ZcsCeZOqA-S7BIKLTLLfl6wXQ/exec";
 const MAX_TOTAL = 20 * 1024 * 1024;
+
+document.getElementById('copyPrompt').addEventListener('click', async () => {
+  const t = document.getElementById('aiPrompt'); const b = document.getElementById('copyPrompt');
+  try { await navigator.clipboard.writeText(t.value); b.textContent = 'コピーしました'; }
+  catch (e) { t.select(); document.execCommand('copy'); b.textContent = 'コピーしました'; }
+  setTimeout(() => b.textContent = 'プロンプトをコピーする', 2000);
+});
 
 const filesInput = document.getElementById('files');
 const flist = document.getElementById('flist');
