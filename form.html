@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>依頼フォーム｜BlackSwan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800;900&family=Bebas+Neue&display=swap">
+<style>
+:root{--ink:#14161A;--paper:#F1F2EE;--acc:#C8F03C;--pur:#5B3DF5;--mute:#3A3F48;--line:#C9CDD3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'M PLUS 1p',sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+.label{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.14em;color:var(--pur);line-height:1}
+h1{font-size:clamp(26px,6vw,32px);font-weight:900;margin:10px 0 8px;line-height:1.35}
+p{margin:0}
+.lead{color:var(--mute);margin-bottom:24px}
+fieldset{border:3px solid var(--ink);border-radius:14px;background:#fff;padding:20px 18px;margin:0 0 18px}
+legend{font-weight:900;font-size:18px;padding:0 8px}
+label{display:block;font-weight:800;margin:14px 0 6px}
+label small{font-weight:500;color:var(--mute)}
+.req{color:#C92A2A;font-size:13px;margin-left:6px}
+input[type=text],input[type=email],input[type=url],input[type=number],textarea,select{width:100%;font:inherit;padding:12px 14px;border:2px solid var(--line);border-radius:10px;background:#fff}
+textarea{min-height:110px;resize:vertical}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--pur)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chk{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:4px}
+.chk label{display:flex;align-items:center;gap:8px;font-weight:600;margin:0}
+.drop{border:2px dashed var(--line);border-radius:10px;padding:18px;text-align:center;color:var(--mute);font-size:14px;background:#FAFAF8}
+.files{font-size:13px;color:var(--mute);margin-top:8px}
+.btn{display:block;width:100%;border:0;cursor:pointer;background:var(--acc);color:var(--ink);font:inherit;font-weight:900;font-size:19px;padding:20px;border-radius:12px;box-shadow:0 6px 0 var(--pur);margin-top:12px}
+.btn[disabled]{opacity:.5;cursor:wait}
+.msg{margin-top:16px;padding:16px;border-radius:10px;font-weight:800;display:none}
+.ok{display:block;background:#E8F7D0;border:2px solid #7CB518}
+.ng{display:block;background:#FDE2E2;border:2px solid #C92A2A}
+.note{font-size:13px;color:var(--mute)}
+a{color:var(--pur)}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="label">REQUEST FORM</div>
+  <h1>依頼フォーム</h1>
+  <p class="lead">わからない項目は空欄で大丈夫です。空欄は［　］の仮置きにして作り、スライド上でご自身で差し替えられます。送信後、翌営業日を目安にスライドのリンクをメールでお送りします。初稿をそのまま納品し、作り直しは承っていないので、独自性と価格は正確にお書きください。</p>
+
+  <form id="f" novalidate>
+    <fieldset>
+      <legend>ご契約情報</legend>
+      <label>決済時のメールアドレス<span class="req">必須</span></label>
+      <input type="email" name="email" required placeholder="example@example.com">
+      <label>お名前<span class="req">必須</span></label>
+      <input type="text" name="name" required>
+      <label>ご契約プラン</label>
+      <select name="plan"><option value="">選択</option><option>ライト（月2件）</option><option>スタンダード（月6件）</option><option>プロ（月15件）</option><option>クラファン支援（1か月分）</option></select>
+      <p class="note" style="margin-top:10px">※ 月の上限は、このメールアドレスとプランで数えます。</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>商品・サービス</legend>
+      <label>商品・サービス名<span class="req">必須</span></label>
+      <input type="text" name="product" required>
+      <label>一言で言うと <small>例：ボタンひとつで空気が抜ける圧縮バッグ</small></label>
+      <input type="text" name="oneliner">
+      <div class="row">
+        <div><label>カテゴリ</label>
+          <select name="category"><option value="">選択</option><option>ガジェット・家電</option><option>食品・飲料</option><option>ファッション・雑貨</option><option>美容・健康</option><option>サービス・体験</option><option>イベント</option><option>その他</option></select></div>
+        <div><label>掲載先</label>
+          <select name="platform"><option value="">選択</option><option>CAMPFIRE</option><option>Makuake</option><option>GREEN FUNDING</option><option>その他</option></select></div>
+      </div>
+      <label>ターゲット <small>誰に届けたいか。2案作り分けるなら2つ</small></label>
+      <input type="text" name="target">
+      <label>独自性（最大3つ）<span class="req">必須</span></label>
+      <textarea name="usp" required placeholder="1. &#10;2. &#10;3. "></textarea>
+      <label>数字で言えること＋根拠 <small>例：最大90%圧縮＝社内試験データ。根拠がない数字は載せません</small></label>
+      <textarea name="numbers"></textarea>
+      <label>仕様 <small>サイズ・重さ・素材・色・対応機種など</small></label>
+      <textarea name="spec"></textarea>
+      <label>使い方・使うシーン</label>
+      <textarea name="usage"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>価格とリターン</legend>
+      <label>一般販売予定価格 <small>販売計画がない場合は空欄（二重価格表示を避けます）</small></label>
+      <input type="text" name="list_price" placeholder="例：9,800円（販売計画あり）">
+      <label>リターン <small>超早割・早割・セットなど。価格 × 限定数</small></label>
+      <textarea name="returns" placeholder="超早割：6,980円 × 限定100個&#10;早割：7,480円 × 限定200個&#10;2個セット：13,800円 × 限定50"></textarea>
+      <label>お届け予定</label>
+      <input type="text" name="delivery" placeholder="例：2027年3月">
+    </fieldset>
+
+    <fieldset>
+      <legend>ストーリー・その他</legend>
+      <label>ストーリー <small>作ることにしたきっかけ、こだわり、苦労、作り手の紹介</small></label>
+      <textarea name="story"></textarea>
+      <label>リスク・注意事項 <small>量産の遅れ、仕様変更の可能性など</small></label>
+      <textarea name="risks"></textarea>
+      <label>FAQにしたい質問</label>
+      <textarea name="faq"></textarea>
+      <label>好みの方向 <small>参考URL／避けたいテイスト／使いたい色</small></label>
+      <textarea name="style"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>写真・資料</legend>
+      <label>商品写真・GIF・ロゴ・資料 <small>合計20MBまで。切り抜きが必要なら下にチェック</small></label>
+      <div class="drop">
+        <input type="file" name="files" id="files" multiple accept="image/*,.gif,.pdf">
+        <div class="files" id="flist">まだ選択されていません</div>
+      </div>
+      <div class="chk">
+        <label><input type="checkbox" name="cutout" value="希望"> 写真の背景を切り抜いて使ってほしい</label>
+      </div>
+      <label>写真が多い場合：共有フォルダのURL <small>Googleドライブ、Dropboxなど</small></label>
+      <input type="url" name="photos_url" placeholder="https://">
+    </fieldset>
+
+    <fieldset>
+      <legend>納品・公開</legend>
+      <div class="row">
+        <div><label>納品形式</label>
+          <select name="format"><option>PowerPoint（.pptx）</option><option>Googleスライド</option><option>両方</option></select></div>
+        <div><label>制作例として公開</label>
+          <select name="publish"><option>不可</option><option>可</option></select></div>
+      </div>
+      <label>その他、伝えておきたいこと</label>
+      <textarea name="memo"></textarea>
+      <div class="chk" style="margin-top:14px">
+        <label><input type="checkbox" name="agree" required> 送る写真・資料は自分に権利があるもの、または使用許可を得たものです</label>
+      </div>
+    </fieldset>
+
+    <button class="btn" type="submit" id="send">この内容で依頼する</button>
+    <div class="msg" id="msg"></div>
+    <p class="note" style="margin-top:14px">送信すると、入力内容と写真が当方の管理用フォルダに保存されます。制作以外の目的には使いません。</p>
+  </form>
+  <p style="margin-top:28px"><a href="index.html">← トップへ戻る</a></p>
+</div>
+
+<script>
+// ▼ Google Apps Script のウェブアプリURLに差し替える（apps_script.gs を参照）
+const ENDPOINT = "https://script.google.com/macros/s/【ここにデプロイIDを貼る】/exec";
+const MAX_TOTAL = 20 * 1024 * 1024;
+
+const filesInput = document.getElementById('files');
+const flist = document.getElementById('flist');
+filesInput.addEventListener('change', () => {
+  const fs = [...filesInput.files];
+  const total = fs.reduce((a, f) => a + f.size, 0);
+  flist.textContent = fs.length ? fs.map(f => f.name).join('、') + `（合計 ${(total/1024/1024).toFixed(1)}MB）` : 'まだ選択されていません';
+  if (total > MAX_TOTAL) flist.textContent += ' ― 20MBを超えています。共有フォルダのURLでお送りください';
+});
+
+const toB64 = f => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result.split(',')[1]); r.onerror = rej; r.readAsDataURL(f); });
+
+document.getElementById('f').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target, msg = document.getElementById('msg'), btn = document.getElementById('send');
+  msg.className = 'msg';
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  const fs = [...filesInput.files];
+  if (fs.reduce((a, f) => a + f.size, 0) > MAX_TOTAL) { msg.className = 'msg ng'; msg.textContent = '添付が20MBを超えています。共有フォルダのURLでお送りください。'; return; }
+  btn.disabled = true; btn.textContent = '送信中…';
+  try {
+    const data = {};
+    new FormData(form).forEach((v, k) => { if (k !== 'files') data[k] = v; });
+    data.files = await Promise.all(fs.map(async f => ({ name: f.name, type: f.type, data: await toB64(f) })));
+    data.sent_at = new Date().toISOString();
+    const r = await fetch(ENDPOINT, { method: 'POST', body: JSON.stringify(data) }); // Apps Script は text/plain で受ける
+    const j = await r.json();
+    if (!j.ok) { if (j.error === 'limit') { msg.className = 'msg ng'; msg.textContent = '今月の上限に達しています。追加1件かプラン変更をご希望の場合は、メールでご連絡ください。'; return; } throw new Error(j.error || 'error'); }
+    msg.className = 'msg ok'; msg.textContent = '受け付けました。翌営業日を目安に、スライドのリンクをメールでお送りします。';
+    form.reset(); flist.textContent = 'まだ選択されていません';
+  } catch (err) {
+    msg.className = 'msg ng'; msg.textContent = '送信できませんでした。時間をおいて再度お試しいただくか、メールでお送りください。';
+  } finally { btn.disabled = false; btn.textContent = 'この内容で依頼する'; }
+});
+</script>
+</body>
+</html>

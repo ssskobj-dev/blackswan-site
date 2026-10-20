@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BlackSwan｜クラファンページ制作</title>
+<meta name="description" content="クラウドファンディングのページを、商品情報を送るだけでスライド形式で制作。月額3,980円から、月2〜15件。">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800;900&family=Bebas+Neue&display=swap">
+<style>
+:root{--bg:#14161A;--ink:#14161A;--paper:#F1F2EE;--white:#FFFFFF;--acc:#C8F03C;--pur:#5B3DF5;--mute:#3A3F48;--line:#C9CDD3}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'M PLUS 1p',sans-serif;font-weight:500;line-height:1.8;font-size:17px}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.label{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.14em;color:var(--pur);line-height:1}
+h1,h2{margin:0;font-weight:900;line-height:1.35;letter-spacing:-.01em}
+h1{font-size:clamp(30px,7vw,42px)}
+h2{font-size:clamp(24px,5.5vw,32px);margin-top:12px}
+p{margin:0}
+.hl{display:inline-block;background:var(--acc);color:var(--ink);padding:0 10px;transform:rotate(-2deg)}
+.btn{display:block;width:100%;text-align:center;background:var(--acc);color:var(--ink);text-decoration:none;font-weight:900;font-size:19px;padding:20px 16px;border-radius:12px;box-shadow:0 6px 0 var(--pur);margin-top:24px}
+.btn.alt{background:var(--white);box-shadow:0 6px 0 var(--ink);border:3px solid var(--ink)}
+.btn small{display:block;font-size:13px;font-weight:800;margin-top:4px;opacity:.75}
+.dark{background:var(--bg);color:var(--white)}
+.dark .label{color:var(--acc)}
+.light{background:var(--paper)}
+.white{background:var(--white)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.tile{background:#22252B;border-radius:12px;padding:16px 8px;text-align:center}
+.tile b{display:block;font-family:'Bebas Neue',sans-serif;font-size:34px;line-height:1;color:var(--acc)}
+.tile b i{font-family:'M PLUS 1p',sans-serif;font-style:normal;font-size:16px;font-weight:900}
+.tile span{display:block;font-size:13px;font-weight:800;margin-top:6px}
+.cards{display:flex;flex-direction:column;gap:14px;margin-top:28px}
+.card{background:var(--white);border:3px solid var(--ink);border-radius:14px;padding:20px 22px}
+.card b{display:block;font-size:19px;font-weight:900;margin-bottom:4px}
+.card .n{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--pur);margin-right:10px;line-height:1}
+.steps{display:flex;flex-direction:column;gap:0;margin-top:28px;position:relative}
+.step{display:flex;gap:16px;align-items:flex-start;padding:14px 0}
+.step .no{flex:none;width:44px;height:44px;border-radius:50%;background:var(--acc);border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:22px}
+.step b{display:block;font-size:18px;font-weight:900}
+.step span{font-size:15px;color:var(--mute)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.plan{background:var(--white);border:3px solid var(--ink);border-radius:14px;padding:18px 10px;text-align:center}
+.plan.hot{background:var(--acc)}
+.plan .pn{font-weight:900;font-size:15px}
+.plan .big{font-family:'Bebas Neue',sans-serif;font-size:38px;line-height:1.1;color:var(--pur);margin-top:6px}
+.plan.hot .big{color:var(--ink)}
+.plan .big i{font-family:'M PLUS 1p',sans-serif;font-style:normal;font-size:12px;font-weight:900;color:var(--ink);display:block}
+.plan .pc{font-size:15px;margin-top:8px}.plan .pc b{font-size:20px;font-weight:900}
+.plan .pu{font-size:12px;color:var(--mute);margin-top:2px}
+.plan .pf{font-size:12px;font-weight:800;margin-top:10px;line-height:1.4}
+@media(max-width:480px){.plans{grid-template-columns:1fr}.plan{display:grid;grid-template-columns:1fr 1fr;text-align:left;align-items:center;gap:2px 12px}.plan .big{font-size:32px}.plan .big i{display:inline;margin-left:4px}.plan .pf{grid-column:1/-1;margin-top:6px}}
+.price{background:var(--white);border:4px solid var(--ink);border-radius:18px;padding:28px 24px;margin-top:28px;box-shadow:10px 10px 0 var(--acc)}
+.price .big{font-family:'Bebas Neue',sans-serif;font-size:64px;line-height:1;color:var(--pur)}
+.price .big i{font-family:'M PLUS 1p',sans-serif;font-style:normal;font-size:22px;font-weight:900;color:var(--ink)}
+.price ul{margin:16px 0 0;padding-left:22px;font-size:16px}
+.price li{margin:4px 0}
+.note{font-size:13px;color:var(--mute);margin-top:16px;line-height:1.6}
+.dark .note{color:#B9BEC6}
+.dark .step span{color:#D5D8DE}
+.faq{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.faq div{background:var(--white);border-radius:12px;padding:18px 20px}
+.faq b{display:block;font-weight:900;margin-bottom:6px}
+.faq b::before{content:"Q";font-family:'Bebas Neue',sans-serif;color:var(--pur);font-size:24px;margin-right:10px}
+.embed{margin-top:24px;border:3px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--white)}
+.embed iframe{display:block;width:100%;height:560px;border:0}
+.ph{padding:40px 20px;text-align:center;color:var(--mute);font-weight:800;font-size:15px}
+footer{padding:40px 0;font-size:13px;color:#B9BEC6}
+footer a{color:#B9BEC6}
+@media(max-width:420px){.tiles{grid-template-columns:1fr 1fr 1fr;gap:6px}.tile b{font-size:26px}}
+</style>
+</head>
+<body>
+
+<section class="dark" style="padding-top:48px">
+  <div class="wrap">
+    <div class="label">BLACK SWAN</div>
+    <h1 style="margin-top:14px">クラファンのページ、<br><span class="hl">送るだけ</span>で、<br>スライドで届きます。</h1>
+    <p style="margin-top:20px;color:#D5D8DE">商品の情報と写真をフォームで送るだけ。構成・コピー・デザインまでまとめた縦長ページを、PowerPoint／Googleスライド形式でお渡しします。文字や色はご自身で直せます。</p>
+    <div class="tiles">
+      <div class="tile"><b>7,980<i>円</i></b><span>月6件・税込</span></div>
+      <div class="tile"><b>3<i>プラン</i></b><span>月2／6／15件</span></div>
+      <div class="tile"><b>翌<i>営業日</i></b><span>初稿のお届け</span></div>
+    </div>
+    <a class="btn" href="#meeting">まず15分の説明面談を予約する<small>無料・オンライン・申し込み前に内容を確認できます</small></a>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="label">WHO</div>
+    <h2>こんな方に向いています。</h2>
+    <div class="cards">
+      <div class="card"><b><span class="n">01</span>月に1件以上、クラファンや先行販売を出す方</b>商品が変わるたびにページを作り直す手間を、まるごと手放せます。</div>
+      <div class="card"><b><span class="n">02</span>外注の10万円・1か月が重い方</b>月7,980円で6件まで。1件あたり1,330円です。</div>
+      <div class="card"><b><span class="n">03</span>自分で最後の調整をしたい方</b>スライド形式なので、文字・色・順番をご自身で直せます。修正のやり取りで待つ必要がありません。</div>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="wrap">
+    <div class="label">WHAT YOU GET</div>
+    <h2>届くもの</h2>
+    <div class="cards">
+      <div class="card"><b>縦長ページ一式（スライド形式）</b>冒頭、悩み、解決、特徴、使い方、仕様、ストーリー、リターン、流れ、注意事項、FAQまで。1セクション1スライドで、幅750pxのスマホ向けに組んであります。</div>
+      <div class="card"><b>PowerPoint（.pptx）とGoogleスライド</b>どちらでも開けます。掲載するときは、スライドを画像として書き出して本文に貼るだけです。</div>
+      <div class="card"><b>本文テキスト</b>画像の間に入れる見出しと文章を、貼るだけの形でお渡しします。</div>
+    </div>
+    <p class="note">※ 写真の撮影・作り込んだイラスト・掲載先への入稿代行は含みません。※ 開く環境によって、文字や図形の位置に調整が必要な場合があります。</p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="label">FLOW</div>
+    <h2>お申し込みから納品まで</h2>
+    <div class="steps">
+      <div class="step"><div class="no">1</div><div><b>説明面談（15分・無料）</b><span>オンラインで、できること・できないこと・上限の数え方をご説明します。</span></div></div>
+      <div class="step"><div class="no">2</div><div><b>お申し込み</b><span>面談後にお送りする決済ページから、カードでお申し込み。その日から使えます。</span></div></div>
+      <div class="step"><div class="no">3</div><div><b>依頼フォームに入力</b><span>このサイトの依頼フォームから、商品名、独自性、価格、ストーリー、写真を送ってください。空欄があっても大丈夫です。</span></div></div>
+      <div class="step"><div class="no">4</div><div><b>翌営業日に納品</b><span>スライドの共有リンクをメールでお届け。文字や色はご自身で調整できます。</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="label">PRICE</div>
+    <h2>料金</h2>
+    <div class="plans">
+      <div class="plan"><div class="pn">ライト</div><div class="big">3,980<i>円／月</i></div><div class="pc">月 <b>2件</b> まで</div><div class="pu">1件あたり 1,990円</div><div class="pf">たまに出す方・まず試したい方</div></div>
+      <div class="plan hot"><div class="pn">スタンダード</div><div class="big">7,980<i>円／月</i></div><div class="pc">月 <b>6件</b> まで</div><div class="pu">1件あたり 1,330円</div><div class="pf">月に数本出す事業者</div></div>
+      <div class="plan"><div class="pn">プロ</div><div class="big">14,800<i>円／月</i></div><div class="pc">月 <b>15件</b> まで</div><div class="pu">1件あたり 987円</div><div class="pf">連発する物販・OEM事業者</div></div>
+    </div>
+    <div class="price" style="box-shadow:none;margin-top:16px">
+      <ul style="margin-top:0">
+        <li>すべて税込。1件＝1商品・1ページ。PowerPoint／Googleスライドで納品</li>
+        <li>初稿をそのまま納品。文字・色・順番の調整はスライド上でご自身で</li>
+        <li>方向を変える作り直しは承っていません（新しい1件としてご依頼ください）</li>
+        <li>当方の誤字・転記ミス・画像の崩れは、納品から7日以内のご連絡で無償で直します</li>
+        <li>いつでも解約可。日割りはありません。未使用分の翌月繰り越しはありません</li>
+      </ul>
+      <p class="note">※ 上限を超える場合は追加1件 ライト1,800円／スタンダード1,200円／プロ900円。※ 対応できない内容（撮影、イラスト制作、入稿代行、動画、法令チェックの保証）は面談でご説明します。</p>
+    </div>
+    <p class="note" style="margin-top:20px">一般の制作会社やクラウドソーシングでは1件10万円前後・納期2週間〜1か月が多く見られます（当方調べ、2026年10月時点。作業範囲は異なります）。</p>
+  </div>
+</section>
+
+<section class="white" id="meeting">
+  <div class="wrap">
+    <div class="label">MEETING</div>
+    <h2>初回説明面談を予約する</h2>
+    <p style="margin-top:12px">申し込みの前に、15分だけオンラインでお話しします。サービスの範囲と、あなたの商品に向いているかを一緒に確認します。無理な勧誘はしません。</p>
+    <a class="btn" href="https://calendar.app.google/ozcMhnygH9mkvPoZ6" target="_blank" rel="noopener">予約ページを開く<small>Google Meetの招待が自動で届きます</small></a>
+  </div>
+</section>
+
+<section class="light" id="apply">
+  <div class="wrap">
+    <div class="label">APPLY</div>
+    <h2>面談がお済みの方はこちら</h2>
+    <p style="margin-top:12px">面談でご案内した内容に同意のうえ、お申し込みください。決済はStripeの安全なページで行います。カード情報は当方には届きません。</p>
+    <div class="cards" style="margin-top:20px">
+      <a class="btn alt" style="margin-top:0" href="https://buy.stripe.com/【ライトの決済リンク】" target="_blank" rel="noopener">ライトに申し込む（3,980円／月・2件）</a>
+      <a class="btn" style="margin-top:0" href="https://buy.stripe.com/8x23cu13J6y84TJ5lI9EI00" target="_blank" rel="noopener">スタンダードに申し込む（7,980円／月・6件）<small>いちばん選ばれています</small></a>
+      <a class="btn alt" style="margin-top:0" href="https://buy.stripe.com/【プロの決済リンク】" target="_blank" rel="noopener">プロに申し込む（14,800円／月・15件）</a>
+    </div>
+    <p class="note" style="margin-top:14px">決済後、このサイトの依頼フォームからすぐに依頼できます。</p>
+  </div>
+</section>
+
+<section class="white" id="request">
+  <div class="wrap">
+    <div class="label">REQUEST</div>
+    <h2>ご契約中の方：依頼フォーム</h2>
+    <p style="margin-top:12px">お申し込み済みの方は、こちらから制作を依頼できます。決済時のメールアドレスを入力してください。</p>
+    <a class="btn alt" href="form.html">依頼フォームを開く<small>商品情報と写真を送るだけ。空欄があっても大丈夫です</small></a>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="label">FAQ</div>
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <div><b>どの掲載先に対応していますか？</b>CAMPFIRE、Makuakeなど、本文を画像で組む形式の掲載先に対応します。</div>
+      <div><b>写真が少なくても頼めますか？</b>商品写真は1枚以上お願いします。足りない部分は図解で補います。</div>
+      <div><b>「1件」の数え方は？</b>1商品・1ページで1件です。同じ商品のターゲット別の作り分けは、1案ごとに1件と数えます。</div>
+      <div><b>修正はどうやって？</b>文字・色・順番はスライド上でご自身で直せます。方向を変える作り直しは承っていないので、新しい1件としてご依頼ください。当方の誤字や転記ミスは無償で直します。</div>
+      <div><b>法令や審査のチェックはしてもらえますか？</b>比較表現や価格表示など、審査で指摘されやすい点は避けて作りますが、最終確認と掲載先への対応はご自身でお願いします。</div>
+      <div><b>解約は？</b>いつでもできます。解約月の末日まで使えます。</div>
+      <div><b>プランの変更は？</b>翌月から変更できます。上限を超えそうな時は、追加1件か上のプランへの変更をお選びください。</div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <h2 style="font-size:clamp(24px,6vw,34px)">ページ作りは任せて、<br><span class="hl">商品と集客</span>に<br>時間を使ってください。</h2>
+    <a class="btn" href="#meeting">15分の説明面談を予約する<small>無料・オンライン</small></a>
+    <footer>
+      <div>BlackSwan ／ Spacify合同会社</div>
+      <div style="margin-top:8px"><a href="tokusho.html">特定商取引法に基づく表記</a>　｜　<a href="mailto:head.sourcing@longevity-ooo.com">お問い合わせ</a></div>
+    </footer>
+  </div>
+</section>
+
+</body>
+</html>
