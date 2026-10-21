@@ -11,7 +11,8 @@ topics:
     keyword: Makuake 毎月出品
     title_hint: Makuake 毎月出品を回す段取り｜ページ制作を量産型にする方法
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-22-makuake-monthly-launch-flow/article.md
   - slug: repeat-outsourcing-breakeven
     keyword: クラファン 物販 リピーター 外注
     title_hint: クラファン物販のリピーターが外注で損する理由｜月額制との損益分岐

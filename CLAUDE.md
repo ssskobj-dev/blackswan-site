@@ -24,9 +24,10 @@
 2. `content/patterns/note_article.md` の型と規則に従って書く。保存先は `note/<今日の日付>-<slug>/article.md`（日付は日本時間 YYYY-MM-DD、slug は topics.yaml の `slug`）。同じ slug のフォルダが既にあれば、その話題は飛ばして次の todo を選ぶ。
 3. 検索語（`keyword`）を題名の前半に入れる。本文は読者が自分でできる手順を本気で書く。薄い記事を出すくらいなら、書かずに報告する。
 4. 相場や料金の数字は、上の「サービスの事実」の範囲だけ。外部の数字を使うときは、自分でその資料を開いて確かめ、出典のリンクを本文に付ける。確かめられなければ書かない。
-5. `content/topics.yaml` の該当する行を `status: done` にし、`published_path` に記事のパスを書く。
-6. `main` に直接コミットしてプッシュする（`note/` と `content/topics.yaml` 以外は変更しない）。コミットメッセージは `note: <slug>`。
-7. 報告は短く: 題名、パス、残りの todo の数。
+5. `pip install pillow` のあと `python scripts/thumbnail.py note/<フォルダ>` で見出し画像を作り、できた `thumbnail.png` を開いて文字のはみ出し・切れがないか確かめる（はみ出すなら題名を短くして作り直す）。
+6. `content/topics.yaml` の該当する行を `status: done` にし、`published_path` に記事のパスを書く。
+7. `main` に直接コミットしてプッシュする（`note/` と `content/topics.yaml` 以外は変更しない）。コミットメッセージは `note: <slug>`。
+8. 報告は短く: 題名、パス、残りの todo の数。
 
 ## してはいけないこと
 
