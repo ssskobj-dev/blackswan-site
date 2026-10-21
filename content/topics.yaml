@@ -17,7 +17,8 @@ topics:
     keyword: クラファン 物販 リピーター 外注
     title_hint: クラファン物販のリピーターが外注で損する理由｜月額制との損益分岐
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-22-repeat-outsourcing-breakeven/article.md
   - slug: page-variants-by-target
     keyword: クラファン ページ 量産
     title_hint: クラファンページ量産｜同じ商品をターゲット別に作り分ける手順
