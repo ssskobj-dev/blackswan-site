@@ -1,0 +1,122 @@
+# BlackSwan 記事のネタ帳
+# status: todo → done。上から順に書く。並び替えて優先度を変えてよい。
+# audience: repeat（毎月出す物販事業者）/ first（初めて出す個人事業主）
+
+campaign:
+  active: false   # CAMPFIRE 実施中は true にする（CTAに早割の1行が付く）
+
+topics:
+  # ---- A. 毎月出す人向け（本命）----
+  - slug: makuake-monthly-launch-flow
+    keyword: Makuake 毎月出品
+    title_hint: Makuake 毎月出品を回す段取り｜ページ制作を量産型にする方法
+    audience: repeat
+    status: todo
+  - slug: repeat-outsourcing-breakeven
+    keyword: クラファン 物販 リピーター 外注
+    title_hint: クラファン物販のリピーターが外注で損する理由｜月額制との損益分岐
+    audience: repeat
+    status: todo
+  - slug: page-variants-by-target
+    keyword: クラファン ページ 量産
+    title_hint: クラファンページ量産｜同じ商品をターゲット別に作り分ける手順
+    audience: repeat
+    status: todo
+  - slug: import-goods-page-cost
+    keyword: 輸入物販 クラファン ページ制作
+    title_hint: 輸入物販のクラファンページ制作を1件1,000円台に下げる考え方
+    audience: repeat
+    status: todo
+  - slug: preorder-lp-structure
+    keyword: 先行予約 LP 作り方
+    title_hint: 先行予約LPの作り方｜Makuake以外の自社ECでも使える構成
+    audience: repeat
+    status: todo
+  - slug: reuse-page-second-time
+    keyword: クラファン ページ 使い回し
+    title_hint: クラファンページの使い回しはNG？｜2回目以降の改稿のコツ
+    audience: repeat
+    status: todo
+
+  # ---- B. 費用・外注比較 ----
+  - slug: page-production-cost-market
+    keyword: クラファン ページ制作 費用 相場
+    title_hint: クラファンのページ制作費用の相場｜単発外注・ココナラ・月額制を比較
+    audience: first
+    status: todo
+  - slug: monthly-agency-comparison
+    keyword: クラファン 代行 月額
+    title_hint: クラファン代行の月額サービス比較｜何件出すなら元が取れるか
+    audience: repeat
+    status: todo
+  - slug: coconala-pitfalls
+    keyword: ココナラ クラファン ページ制作
+    title_hint: ココナラでクラファンページ制作を頼む前に｜納期が2〜5倍になる理由
+    audience: first
+    status: todo
+  - slug: diy-vs-outsource
+    keyword: クラファン ページ 自作 外注
+    title_hint: クラファンページは自作か外注か｜1件あたりの時間と金額で比べる
+    audience: first
+    status: todo
+
+  # ---- C. 作り方（検索ボリューム用）----
+  - slug: makuake-image-size
+    keyword: Makuake 画像サイズ
+    title_hint: Makuakeの画像サイズと枚数の正解（2026年版）｜縦長ページの作り方
+    audience: first
+    status: todo
+  - slug: campfire-page-howto
+    keyword: CAMPFIRE ページ 作り方
+    title_hint: CAMPFIREのページの作り方｜審査に通る構成と画像点数
+    audience: first
+    status: todo
+  - slug: lp-structure-template
+    keyword: クラファン LP 構成
+    title_hint: クラファンLPの構成テンプレート｜スライド1枚＝1セクションで作る
+    audience: first
+    status: todo
+  - slug: images-with-powerpoint
+    keyword: クラファン 画像 作り方 PowerPoint
+    title_hint: クラファンの画像をPowerPointで作る手順｜750px縦長で入稿する
+    audience: first
+    status: todo
+  - slug: story-writing-template
+    keyword: クラファン ストーリー 書き方
+    title_hint: クラファンのストーリーの書き方｜1,500文字の雛形つき
+    audience: first
+    status: todo
+
+  # ---- D. 失敗・審査 ----
+  - slug: review-rejection-reasons
+    keyword: クラファン 審査 落ちる
+    title_hint: クラファンの審査に落ちる理由と修正例
+    audience: first
+    status: todo
+  - slug: no-backers-common-causes
+    keyword: クラファン 支援が集まらない
+    title_hint: クラファンで支援が集まらないページの共通点3つ
+    audience: first
+    status: todo
+  - slug: second-campaign-failures
+    keyword: クラファン 2回目 失敗
+    title_hint: クラファン2回目で失敗する人の特徴｜1回目との違い
+    audience: repeat
+    status: todo
+
+  # ---- E. 業種別 ----
+  - slug: gadget-page-specs
+    keyword: ガジェット クラファン ページ
+    title_hint: ガジェットのクラファンページ構成｜スペックの見せ方
+    audience: repeat
+    status: todo
+  - slug: apparel-page-sizes
+    keyword: アパレル クラファン ページ
+    title_hint: アパレルのクラファンページ｜サイズ・素材の書き方
+    audience: repeat
+    status: todo
+  - slug: food-page-labeling
+    keyword: 食品 クラファン ページ
+    title_hint: 食品のクラファンページ｜表示の決まりと写真の順番
+    audience: repeat
+    status: todo
