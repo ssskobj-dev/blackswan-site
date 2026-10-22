@@ -29,7 +29,8 @@ topics:
     keyword: 輸入物販 クラファン ページ制作
     title_hint: 輸入物販のクラファンページ制作を1件1,000円台に下げる考え方
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-22-import-goods-page-cost/article.md
   - slug: preorder-lp-structure
     keyword: 先行予約 LP 作り方
     title_hint: 先行予約LPの作り方｜Makuake以外の自社ECでも使える構成
