@@ -23,7 +23,8 @@ topics:
     keyword: クラファン ページ 量産
     title_hint: クラファンページ量産｜同じ商品をターゲット別に作り分ける手順
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-22-page-variants-by-target/article.md
   - slug: import-goods-page-cost
     keyword: 輸入物販 クラファン ページ制作
     title_hint: 輸入物販のクラファンページ制作を1件1,000円台に下げる考え方
