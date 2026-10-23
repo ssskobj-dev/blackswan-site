@@ -41,7 +41,8 @@ topics:
     keyword: クラファン ページ 使い回し
     title_hint: クラファンページの使い回しはNG？｜2回目以降の改稿のコツ
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-24-reuse-page-second-time/article.md
 
   # ---- B. 費用・外注比較 ----
   - slug: page-production-cost-market
