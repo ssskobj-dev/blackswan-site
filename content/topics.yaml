@@ -35,7 +35,8 @@ topics:
     keyword: 先行予約 LP 作り方
     title_hint: 先行予約LPの作り方｜Makuake以外の自社ECでも使える構成
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-23-preorder-lp-structure/article.md
   - slug: reuse-page-second-time
     keyword: クラファン ページ 使い回し
     title_hint: クラファンページの使い回しはNG？｜2回目以降の改稿のコツ
