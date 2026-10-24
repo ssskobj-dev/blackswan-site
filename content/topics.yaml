@@ -55,7 +55,8 @@ topics:
     keyword: クラファン 代行 月額
     title_hint: クラファン代行の月額サービス比較｜何件出すなら元が取れるか
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-25-monthly-agency-comparison/article.md
   - slug: coconala-pitfalls
     keyword: ココナラ クラファン ページ制作
     title_hint: ココナラでクラファンページ制作を頼む前に｜納期が2〜5倍になる理由
