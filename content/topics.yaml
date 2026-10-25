@@ -61,7 +61,8 @@ topics:
     keyword: ココナラ クラファン ページ制作
     title_hint: ココナラでクラファンページ制作を頼む前に｜納期が2〜5倍になる理由
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-25-coconala-pitfalls/article.md
   - slug: diy-vs-outsource
     keyword: クラファン ページ 自作 外注
     title_hint: クラファンページは自作か外注か｜1件あたりの時間と金額で比べる
