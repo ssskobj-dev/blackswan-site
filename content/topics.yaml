@@ -75,7 +75,8 @@ topics:
     keyword: Makuake 画像サイズ
     title_hint: Makuakeの画像サイズと枚数の正解（2026年版）｜縦長ページの作り方
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-27-makuake-image-size/article.md
   - slug: campfire-page-howto
     keyword: CAMPFIRE ページ 作り方
     title_hint: CAMPFIREのページの作り方｜審査に通る構成と画像点数
