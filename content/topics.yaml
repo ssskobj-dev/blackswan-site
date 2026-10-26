@@ -67,7 +67,8 @@ topics:
     keyword: クラファン ページ 自作 外注
     title_hint: クラファンページは自作か外注か｜1件あたりの時間と金額で比べる
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-26-diy-vs-outsource/article.md
 
   # ---- C. 作り方（検索ボリューム用）----
   - slug: makuake-image-size
