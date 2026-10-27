@@ -81,7 +81,8 @@ topics:
     keyword: CAMPFIRE ページ 作り方
     title_hint: CAMPFIREのページの作り方｜審査に通る構成と画像点数
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-27-campfire-page-howto/article.md
   - slug: lp-structure-template
     keyword: クラファン LP 構成
     title_hint: クラファンLPの構成テンプレート｜スライド1枚＝1セクションで作る
