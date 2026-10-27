@@ -87,7 +87,8 @@ topics:
     keyword: クラファン LP 構成
     title_hint: クラファンLPの構成テンプレート｜スライド1枚＝1セクションで作る
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-28-lp-structure-template/article.md
   - slug: images-with-powerpoint
     keyword: クラファン 画像 作り方 PowerPoint
     title_hint: クラファンの画像をPowerPointで作る手順｜750px縦長で入稿する
