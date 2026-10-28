@@ -93,7 +93,8 @@ topics:
     keyword: クラファン 画像 作り方 PowerPoint
     title_hint: クラファンの画像をPowerPointで作る手順｜750px縦長で入稿する
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-28-images-with-powerpoint/article.md
   - slug: story-writing-template
     keyword: クラファン ストーリー 書き方
     title_hint: クラファンのストーリーの書き方｜1,500文字の雛形つき
