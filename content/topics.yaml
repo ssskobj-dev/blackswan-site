@@ -99,7 +99,8 @@ topics:
     keyword: クラファン ストーリー 書き方
     title_hint: クラファンのストーリーの書き方｜1,500文字の雛形つき
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-29-story-writing-template/article.md
 
   # ---- D. 失敗・審査 ----
   - slug: review-rejection-reasons
