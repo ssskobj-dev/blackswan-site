@@ -107,7 +107,8 @@ topics:
     keyword: クラファン 審査 落ちる
     title_hint: クラファンの審査に落ちる理由と修正例
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-29-review-rejection-reasons/article.md
   - slug: no-backers-common-causes
     keyword: クラファン 支援が集まらない
     title_hint: クラファンで支援が集まらないページの共通点3つ
