@@ -113,7 +113,8 @@ topics:
     keyword: クラファン 支援が集まらない
     title_hint: クラファンで支援が集まらないページの共通点3つ
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-10-30-no-backers-common-causes/article.md
   - slug: second-campaign-failures
     keyword: クラファン 2回目 失敗
     title_hint: クラファン2回目で失敗する人の特徴｜1回目との違い
