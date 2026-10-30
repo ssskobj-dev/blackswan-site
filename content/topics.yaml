@@ -127,7 +127,8 @@ topics:
     keyword: ガジェット クラファン ページ
     title_hint: ガジェットのクラファンページ構成｜スペックの見せ方
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-31-gadget-page-specs/article.md
   - slug: apparel-page-sizes
     keyword: アパレル クラファン ページ
     title_hint: アパレルのクラファンページ｜サイズ・素材の書き方
