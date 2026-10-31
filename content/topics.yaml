@@ -133,7 +133,8 @@ topics:
     keyword: アパレル クラファン ページ
     title_hint: アパレルのクラファンページ｜サイズ・素材の書き方
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-10-31-apparel-page-sizes/article.md
   - slug: food-page-labeling
     keyword: 食品 クラファン ページ
     title_hint: 食品のクラファンページ｜表示の決まりと写真の順番
