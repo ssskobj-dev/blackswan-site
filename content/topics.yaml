@@ -139,4 +139,5 @@ topics:
     keyword: 食品 クラファン ページ
     title_hint: 食品のクラファンページ｜表示の決まりと写真の順番
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-01-food-page-labeling/article.md
