@@ -141,3 +141,78 @@ topics:
     audience: repeat
     status: done
     published_path: note/2026-11-01-food-page-labeling/article.md
+
+  # ---- F. 季節・タイミング ----
+  - slug: year-end-gift-campaign
+    keyword: クラファン 年末 ギフト
+    title_hint: 年末ギフト向けクラファンページの作り方｜締切と配送時期の見せ方
+    audience: repeat
+    status: todo
+  - slug: launch-day-timing
+    keyword: クラファン 開始日 いつ
+    title_hint: クラファンの開始日はいつがいい？｜月初・月末・曜日の決め方
+    audience: repeat
+    status: todo
+
+  # ---- G. リターン設計 ----
+  - slug: reward-tier-design
+    keyword: クラファン リターン 設計
+    title_hint: クラファンのリターン設計｜価格帯3段と早割の組み方
+    audience: first
+    status: todo
+  - slug: early-bird-discount-planning
+    keyword: クラファン 早割 割引率
+    title_hint: クラファン早割の割引率の決め方｜数量と期間で損をしない設計
+    audience: repeat
+    status: todo
+  - slug: reward-list-images
+    keyword: クラファン リターン 画像
+    title_hint: クラファンのリターン画像の作り方｜一目で選べる一覧にする
+    audience: first
+    status: todo
+
+  # ---- H. 公開中の運用 ----
+  - slug: activity-report-howto
+    keyword: クラファン 活動報告 書き方
+    title_hint: クラファン活動報告の書き方｜公開中にページを育てる手順
+    audience: repeat
+    status: todo
+  - slug: page-edit-after-launch
+    keyword: クラファン ページ 修正 公開後
+    title_hint: クラファンのページは公開後に修正できる？｜直せる箇所と手順
+    audience: repeat
+    status: todo
+  - slug: faq-section-writing
+    keyword: クラファン FAQ 書き方
+    title_hint: クラファンのFAQの書き方｜問い合わせを減らす質問10個
+    audience: first
+    status: todo
+
+  # ---- I. 海外・他プラットフォーム ----
+  - slug: kickstarter-page-structure
+    keyword: Kickstarter ページ 作り方
+    title_hint: Kickstarterのページの作り方｜Makuakeと構成はどう違うか
+    audience: repeat
+    status: todo
+  - slug: greenfunding-page-howto
+    keyword: GREEN FUNDING ページ 作り方
+    title_hint: GREEN FUNDINGのページの作り方｜Makuake・CAMPFIREとの違い
+    audience: first
+    status: todo
+
+  # ---- J. 素材・外注の準備 ----
+  - slug: product-photos-smartphone
+    keyword: クラファン 商品写真 スマホ
+    title_hint: クラファンの商品写真をスマホで撮る手順｜ページに要る8カット
+    audience: first
+    status: todo
+  - slug: outsourcing-brief-sheet
+    keyword: クラファン ページ 外注 依頼書
+    title_hint: クラファンページ外注の依頼書の書き方｜1回で伝わる10項目
+    audience: repeat
+    status: todo
+  - slug: page-checklist-before-submit
+    keyword: クラファン ページ チェックリスト
+    title_hint: クラファンページ公開前のチェックリスト｜審査前に見る20項目
+    audience: first
+    status: todo
