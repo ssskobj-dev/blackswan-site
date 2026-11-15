@@ -147,7 +147,8 @@ topics:
     keyword: クラファン 年末 ギフト
     title_hint: 年末ギフト向けクラファンページの作り方｜締切と配送時期の見せ方
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-16-year-end-gift-campaign/article.md
   - slug: launch-day-timing
     keyword: クラファン 開始日 いつ
     title_hint: クラファンの開始日はいつがいい？｜月初・月末・曜日の決め方
