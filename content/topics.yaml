@@ -153,7 +153,8 @@ topics:
     keyword: クラファン 開始日 いつ
     title_hint: クラファンの開始日はいつがいい？｜月初・月末・曜日の決め方
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-16-launch-day-timing/article.md
 
   # ---- G. リターン設計 ----
   - slug: reward-tier-design
