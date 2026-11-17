@@ -167,7 +167,8 @@ topics:
     keyword: クラファン 早割 割引率
     title_hint: クラファン早割の割引率の決め方｜数量と期間で損をしない設計
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-17-early-bird-discount-planning/article.md
   - slug: reward-list-images
     keyword: クラファン リターン 画像
     title_hint: クラファンのリターン画像の作り方｜一目で選べる一覧にする
