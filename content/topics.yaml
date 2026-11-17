@@ -173,7 +173,8 @@ topics:
     keyword: クラファン リターン 画像
     title_hint: クラファンのリターン画像の作り方｜一目で選べる一覧にする
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-11-18-reward-list-images/article.md
 
   # ---- H. 公開中の運用 ----
   - slug: activity-report-howto
