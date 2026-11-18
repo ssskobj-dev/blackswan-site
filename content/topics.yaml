@@ -187,7 +187,8 @@ topics:
     keyword: クラファン ページ 修正 公開後
     title_hint: クラファンのページは公開後に修正できる？｜直せる箇所と手順
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-19-page-edit-after-launch/article.md
   - slug: faq-section-writing
     keyword: クラファン FAQ 書き方
     title_hint: クラファンのFAQの書き方｜問い合わせを減らす質問10個
