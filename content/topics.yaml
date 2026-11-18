@@ -181,7 +181,8 @@ topics:
     keyword: クラファン 活動報告 書き方
     title_hint: クラファン活動報告の書き方｜公開中にページを育てる手順
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-18-activity-report-howto/article.md
   - slug: page-edit-after-launch
     keyword: クラファン ページ 修正 公開後
     title_hint: クラファンのページは公開後に修正できる？｜直せる箇所と手順
