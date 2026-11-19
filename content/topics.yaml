@@ -201,7 +201,8 @@ topics:
     keyword: Kickstarter ページ 作り方
     title_hint: Kickstarterのページの作り方｜Makuakeと構成はどう違うか
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-19-kickstarter-page-structure/article.md
   - slug: greenfunding-page-howto
     keyword: GREEN FUNDING ページ 作り方
     title_hint: GREEN FUNDINGのページの作り方｜Makuake・CAMPFIREとの違い
