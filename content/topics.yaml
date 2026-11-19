@@ -193,7 +193,8 @@ topics:
     keyword: クラファン FAQ 書き方
     title_hint: クラファンのFAQの書き方｜問い合わせを減らす質問10個
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-11-19-faq-section-writing/article.md
 
   # ---- I. 海外・他プラットフォーム ----
   - slug: kickstarter-page-structure
