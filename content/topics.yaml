@@ -215,7 +215,8 @@ topics:
     keyword: クラファン 商品写真 スマホ
     title_hint: クラファンの商品写真をスマホで撮る手順｜ページに要る8カット
     audience: first
-    status: todo
+    status: done
+    published_path: note/2026-11-21-product-photos-smartphone/article.md
   - slug: outsourcing-brief-sheet
     keyword: クラファン ページ 外注 依頼書
     title_hint: クラファンページ外注の依頼書の書き方｜1回で伝わる10項目
