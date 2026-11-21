@@ -221,7 +221,8 @@ topics:
     keyword: クラファン ページ 外注 依頼書
     title_hint: クラファンページ外注の依頼書の書き方｜1回で伝わる10項目
     audience: repeat
-    status: todo
+    status: done
+    published_path: note/2026-11-21-outsourcing-brief-sheet/article.md
   - slug: page-checklist-before-submit
     keyword: クラファン ページ チェックリスト
     title_hint: クラファンページ公開前のチェックリスト｜審査前に見る20項目
